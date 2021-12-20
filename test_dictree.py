@@ -4,7 +4,7 @@ import dicttree
 
 xmlname = 'dicttree.xml'
 d = dicttree.DictTree(xmlname)
-try:
-    assert(exists(xmlname))
-except:
-    print("DictTree init failed!")
+
+def test_init():
+    assert exists(xmlname+'f')
+
